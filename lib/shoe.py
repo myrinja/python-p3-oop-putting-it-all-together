@@ -13,10 +13,13 @@ class Shoe:
     #property
     def size(self):
         return self._size
+    size = property(size)
 
     #size.setter
     def size(self, value):
         if not isinstance(value, int):
+            
+
             raise ValueError("size must be an integer")
         else:
             self._size = value
